@@ -1,0 +1,549 @@
+<html class="dark" lang="en"><head></head><body class="bg-background text-on-surface">```html
+
+
+
+    <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Devi Digital Studio | Cinematic Memories (Aurelian Noir)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-dim": "#0e0e0e",
+                "surface-container-high": "#1a1a1a",
+                "inverse-surface": "#fdf8f6",
+                "on-error-container": "#ffdad6",
+                "on-secondary-fixed-variant": "#c8c6c5",
+                "on-primary-fixed": "#241a00",
+                "secondary-container": "#2a2a2a",
+                "outline-variant": "#4d4635",
+                "primary-container": "#574500",
+                "on-primary-container": "#ffe088",
+                "primary-fixed": "#ffe088",
+                "secondary-fixed-dim": "#c8c6c5",
+                "on-primary-fixed-variant": "#ffe088",
+                "on-tertiary-fixed": "#dbe1ff",
+                "on-tertiary-container": "#dbe1ff",
+                "error": "#ffb4ab",
+                "outline": "#98907d",
+                "secondary-fixed": "#e5e2e1",
+                "on-secondary-container": "#e5e2e1",
+                "on-background": "#e5e2e1",
+                "primary-fixed-dim": "#e9c349",
+                "on-secondary": "#1a1c1b",
+                "on-tertiary-fixed-variant": "#dbe1ff",
+                "error-container": "#93000a",
+                "surface-bright": "#222222",
+                "on-tertiary": "#1a1c1b",
+                "inverse-primary": "#735c00",
+                "surface-container-low": "#131313",
+                "on-surface-variant": "#d0c5af",
+                "surface-container-lowest": "#080808",
+                "surface-container-highest": "#333333",
+                "tertiary-container": "#00174b",
+                "on-surface": "#e5e2e1",
+                "surface-variant": "#4d4635",
+                "tertiary-fixed-dim": "#b4c5ff",
+                "surface-tint": "#e9c349",
+                "background": "#0e0e0e",
+                "surface": "#0e0e0e",
+                "tertiary-fixed": "#dbe1ff",
+                "primary": "#f2ca50",
+                "on-secondary-fixed": "#1a1c1b"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Noto Serif"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Manrope', sans-serif; background-color: #0e0e0e; color: #e5e2e1; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(19, 19, 19, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #735c00 0%, #f2ca50 100%);
+        }
+        .noir-gradient {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0e0e0e 100%);
+        }
+    </style>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+<nav class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#f2ca50]">Devi Digital Studio</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-400 hover:text-[#f2ca50] transition-colors duration-300 font-serif text-lg tracking-tight" href="#instant-services">Instant Services</a>
+<a class="text-neutral-400 hover:text-[#f2ca50] transition-colors duration-300 font-serif text-lg tracking-tight" href="#portfolio">Gallery</a>
+<a class="text-neutral-400 hover:text-[#f2ca50] transition-colors duration-300 font-serif text-lg tracking-tight" href="#services">Premium Services</a>
+<a class="text-neutral-400 hover:text-[#f2ca50] transition-colors duration-300 font-serif text-lg tracking-tight" href="#contact">Contact</a>
+</div>
+<button onclick="window.open('https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio', '_blank')" class="cursor-pointer gold-gradient text-on-primary px-6 py-2 rounded-md font-bold transition-transform active:scale-95 duration-150">Book Session</button>
+</nav>
+</header>
+<!-- SideNavBar (Social Links) -->
+<aside class="fixed right-8 top-1/2 -translate-y-1/2 w-12 flex flex-col gap-8 items-center z-40 bg-transparent">
+<a class="group transition-transform hover:scale-110 active:opacity-70" href="https://www.instagram.com/deviphotography_2008" target="_blank" title="Instagram">
+<svg class="w-6 h-6 text-[#f2ca50] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="group transition-transform hover:scale-110 active:opacity-70" href="https://www.facebook.com/people/sathish_devistudio/100067106596400/" target="_blank" title="Facebook">
+<svg class="w-6 h-6 text-[#f2ca50] fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
+</a>
+</aside>
+<!-- Hero Section -->
+<section class="relative h-[90vh] w-full flex items-center justify-center overflow-hidden">
+<img id="hero-img" class="absolute inset-0 w-full h-full object-cover opacity-40 will-change-transform" data-alt="cinematic low angle shot of a bride and groom during a traditional Indian wedding ceremony" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoeC-Tjc-RpKcne4yh0W_n-GG8hzSNL_9Av59ZTwwgcCLtUXzK1aDsjesVUH7rak7wfGLIA3gjzLvnHRCvsS-gnSjMZAD8S5b8UwJqoDJmAzFWnovWgHXFO12qBISvWEE3QpzqF1Ervi5tH0i_xUqOjABQ31iOdXXL0KEr3ml_IobnSogqSfDG5aHtvof_yboTXHhyuGSJTIS-priQ3M0wrtWYQZoi3B9e8BFcH4ZpK-HiatZKjCQubRIyUPpW0HG86dn9buPrhUs"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-background"></div>
+<div id="hero-content" class="relative z-10 text-center px-4 max-w-5xl will-change-transform">
+<span class="font-['Manrope'] uppercase tracking-[0.4em] text-primary mb-4 block text-sm font-bold">Premium Photography Studio</span>
+<h1 class="text-6xl md:text-8xl font-bold tracking-tight mb-6 leading-tight text-white">Devi Digital Studio</h1>
+<p class="text-xl md:text-2xl font-light text-on-surface-variant max-w-2xl mx-auto mb-12">Capturing Moments. Creating Cinematic Memories.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<button onclick="window.open('https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio', '_blank')" class="gold-gradient text-on-primary px-10 py-4 rounded-md font-bold text-lg flex items-center gap-2 group transition-all cursor-pointer">
+                    Book Appointment
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button onclick="window.location.href='tel:+919880989759'" class="bg-surface-container-high border border-primary/20 text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-surface-container-highest transition-all cursor-pointer">
+                    Call Now
+                </button>
+</div>
+</div>
+</section>
+<!-- Instant Services Section -->
+<section class="py-24 bg-surface-container-low" id="instant-services">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-[0.3em] uppercase text-xs mb-4 block">While You Wait</span>
+<h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">Instant Services</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">High-quality prints and personalized gifts delivered in minutes.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-high p-8 rounded-2xl shadow-sm border border-outline-variant/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">portrait</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-white">Passport Photos</h3>
+<p class="text-primary font-serif text-2xl mb-4">₹99</p>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">Standard 35x45mm or 2x2 inch prints. Ready in 5 minutes.</p>
+<a class="w-full py-3 bg-surface-container-highest rounded-lg text-center font-bold text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20want%20to%20book%20Passport%20Size%20Photos.%20Please%20share%20details." target="_blank">Book Now</a>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-high p-8 rounded-2xl shadow-sm border border-outline-variant/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">flight_takeoff</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-white">Visa Photos</h3>
+<p class="text-primary font-serif text-2xl mb-4">₹149</p>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">US, UK, Europe, or specific country requirements guaranteed.</p>
+<a class="w-full py-3 bg-surface-container-highest rounded-lg text-center font-bold text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20need%20Visa%20Photos.%20Please%20let%20me%20know%20requirements%20and%20timing." target="_blank">Book Now</a>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-high p-8 rounded-2xl shadow-sm border border-outline-variant/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">frame_person</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-white">Photo Frames</h3>
+<p class="text-primary font-serif text-2xl mb-4">₹249</p>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">Includes lamination and premium framing. Multiple sizes available.</p>
+<a class="w-full py-3 bg-surface-container-highest rounded-lg text-center font-bold text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20want%20to%20order%20Photo%20Frames.%20Please%20share%20options." target="_blank">Book Now</a>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-high p-8 rounded-2xl shadow-sm border border-outline-variant/30 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">local_cafe</span>
+</div>
+<h3 class="text-xl font-bold mb-2 text-white">Magic Mugs</h3>
+<p class="text-primary font-serif text-2xl mb-4">₹549</p>
+<p class="text-on-surface-variant text-sm mb-8 flex-grow">Heat-sensitive photo mugs. Watch your photo appear with hot drink.</p>
+<a class="w-full py-3 bg-surface-container-highest rounded-lg text-center font-bold text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20want%20to%20customize%20a%20Magic%20Mug.%20Please%20provide%20details." target="_blank">Book Now</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof -->
+<section class="py-16 bg-surface-container-lowest border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-4">
+<div class="flex text-[#f2ca50]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<div>
+<p class="text-2xl font-bold text-white">4.8 Rating</p>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest">350+ Google Reviews</p>
+</div>
+</div>
+<div class="h-px w-24 bg-primary/20 hidden md:block"></div>
+<div class="text-center">
+<p class="text-3xl font-serif text-primary">1000+</p>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest">Happy Clients Served</p>
+</div>
+<div class="h-px w-24 bg-primary/20 hidden md:block"></div>
+<div class="text-center">
+<p class="text-3xl font-serif text-primary">10+</p>
+<p class="text-sm text-on-surface-variant uppercase tracking-widest">Years of Excellence</p>
+</div>
+</div>
+</section>
+<!-- Portfolio Gallery -->
+<section class="py-24 px-8 max-w-screen-2xl mx-auto" id="portfolio">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<span class="text-primary font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Visual Excellence</span>
+<h2 class="text-5xl md:text-6xl font-bold leading-tight text-white">The Portfolio Gallery</h2>
+</div>
+</div>
+<!-- Grid Portfolio -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="Images/photo1.jpeg" alt="Devi Digital Studio Gallery Image 1"/>
+</div>
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="Images/photo2.jpeg" alt="Devi Digital Studio Gallery Image 2"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="Images/photo3.jpeg" alt="Devi Digital Studio Gallery Image 3"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="Images/photo4.jpeg" alt="Devi Digital Studio Gallery Image 4"/>
+</div>
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="Images/photo5.jpeg" alt="Devi Digital Studio Gallery Image 5"/>
+</div>
+<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="Images/photo6.jpeg" alt="Devi Digital Studio Gallery Image 6"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<span class="text-primary font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Our Expertise</span>
+<h2 class="text-5xl font-bold mb-6 text-white">Premium Studio Services</h2>
+<div class="h-1 w-24 gold-gradient mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:scale-110 transition-transform">celebration</span>
+<h3 class="text-2xl font-serif mb-4 text-white">Candid Wedding</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Unscripted, raw emotions captured in their purest form. We focus on the moments you might miss.</p>
+<a class="text-primary flex items-center gap-2 font-bold tracking-widest uppercase text-xs" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20am%20interested%20in%20Wedding%20Photography.%20Please%20share%20packages." target="_blank">Learn More <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group border-t-4 border-primary/40 border-x border-b border-outline-variant/20 shadow-lg">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:scale-110 transition-transform">movie</span>
+<h3 class="text-2xl font-serif mb-4 text-white">Cinematic Film</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Professional storytelling using high-end 4K cinema cameras and advanced post-production techniques.</p>
+<a class="text-primary flex items-center gap-2 font-bold tracking-widest uppercase text-xs" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20want%20a%20Cinematic%20Wedding%20Film.%20Please%20share%20details." target="_blank">Learn More <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:scale-110 transition-transform">precision_manufacturing</span>
+<h3 class="text-2xl font-serif mb-4 text-white">Product &amp; E-com</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Crisp, high-impact visuals designed to showcase your products and drive conversion for your brand.</p>
+<a class="text-primary flex items-center gap-2 font-bold tracking-widest uppercase text-xs" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20need%20Product%20Photography.%20Please%20share%20pricing." target="_blank">Learn More <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:scale-110 transition-transform">flight_takeoff</span>
+<h3 class="text-2xl font-serif mb-4 text-white">Drone Photography</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Breathtaking aerial perspectives captured with professional-grade drone equipment.</p>
+<a class="text-primary flex items-center gap-2 font-bold tracking-widest uppercase text-xs" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20need%20Drone%20Photography%20services.%20Please%20share%20details." target="_blank">Learn More <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+<!-- Service Card 5 -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group border-t-4 border-primary/40 border-x border-b border-outline-variant/20 shadow-lg">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:scale-110 transition-transform">business</span>
+<h3 class="text-2xl font-serif mb-4 text-white">Corporate Events</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Documenting your brand's major milestones, conferences, and formal gatherings with precision.</p>
+<a class="text-primary flex items-center gap-2 font-bold tracking-widest uppercase text-xs" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20want%20coverage%20for%20a%20Corporate%20Event.%20Please%20share%20packages." target="_blank">Learn More <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+<!-- Service Card 6 -->
+<div class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 group-hover:scale-110 transition-transform">child_care</span>
+<h3 class="text-2xl font-serif mb-4 text-white">Baby &amp; Maternity</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Creating heartwarming memories of your child's earliest years in a comfortable environment.</p>
+<a class="text-primary flex items-center gap-2 font-bold tracking-widest uppercase text-xs" href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio,%20I%20want%20Baby/Maternity%20photoshoot.%20Please%20share%20details." target="_blank">Learn More <span class="material-symbols-outlined text-lg">chevron_right</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Highlight Reel Section -->
+<section class="relative py-24 px-8 overflow-hidden bg-background">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover opacity-20" data-alt="behind the scenes shot of a professional photographer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX2xaZwMftqrSnvj6NmzNxc-wtE1bbhLB8YDDJ1Z-jnmnTzirjQtuFVkqutD1lUOyNlPL8PzUtkd6fzkyH-HHoRf-1wNLFr_5OU44gL_rjSxl4ziI1k_UVMTeVYdE61f8tnqT1eBoSlCCHjhBOUl4LiiROTGOgP0VX-qoHIZs0VgO4Qopvwh_YkhbUm7GHT9-Yr6sb6NQi4xndRzUcuXwpxRLw59G5x-YjtW7EogeNU47twRGeQhlp_JwleH9bS_cr9duNP_bODNA"/>
+<div class="absolute inset-0 bg-background/80"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1">
+<span class="text-primary font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Motion Picture</span>
+<h2 class="text-5xl font-bold mb-8 text-white">Cinematic Highlight Reel</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-10">Experience our storytelling approach through motion. We blend advanced cinematography with deep emotional resonance to create films that last a lifetime.</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<p class="text-3xl font-serif text-primary">4K</p>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant">Ultra HD Content</p>
+</div>
+<div>
+<p class="text-3xl font-serif text-primary">Dolby</p>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant">Surround Sound</p>
+</div>
+</div>
+</div>
+<div class="flex-none md:flex-1 w-full max-w-[320px] mx-auto aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl relative border-4 border-surface-container-highest group">
+<a href="https://www.youtube.com/shorts/lCS5Pp7gA5Y?feature=share" target="_blank" class="absolute inset-0 block z-10 cursor-pointer">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Devi Digital Studio Cinematic Reel" src="https://img.youtube.com/vi/lCS5Pp7gA5Y/hqdefault.jpg"/>
+    <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
+        <div class="w-20 h-20 gold-gradient rounded-full flex items-center justify-center text-on-primary shadow-lg shadow-primary/40 group-hover:scale-110 transition-transform hover:shadow-primary/60">
+            <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+        </div>
+    </div>
+</a>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center border border-primary/30 rounded-lg text-primary bg-primary/5">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<h4 class="text-xl font-bold text-white">10+ Years Experience</h4>
+<p class="text-on-surface-variant text-sm">A decade of perfecting our craft and understanding unique client needs.</p>
+</div>
+<div class="flex flex-col items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center border border-primary/30 rounded-lg text-primary bg-primary/5">
+<span class="material-symbols-outlined">camera</span>
+</div>
+<h4 class="text-xl font-bold text-white">4K Equipment</h4>
+<p class="text-on-surface-variant text-sm">We use the latest high-end gear to ensure stunning clarity and detail.</p>
+</div>
+<div class="flex flex-col items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center border border-primary/30 rounded-lg text-primary bg-primary/5">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h4 class="text-xl font-bold text-white">Storytelling Team</h4>
+<p class="text-on-surface-variant text-sm">Our experts don't just take photos; they tell a narrative through visuals.</p>
+</div>
+<div class="flex flex-col items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center border border-primary/30 rounded-lg text-primary bg-primary/5">
+<span class="material-symbols-outlined">shutter_speed</span>
+</div>
+<h4 class="text-xl font-bold text-white">Fast Delivery</h4>
+<p class="text-on-surface-variant text-sm">Optimized post-production workflow for quick and premium results.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Booking -->
+<section class="py-24 bg-surface-container-low" id="contact">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<span class="text-primary font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Get In Touch</span>
+<h2 class="text-5xl font-bold mb-12 text-white">Visit Our Studio</h2>
+<div class="space-y-8 mb-12">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+<p class="font-bold text-lg mb-1 text-white">Studio Address</p>
+<p class="text-on-surface-variant">Jigani - Anekal Rd, Bengaluru, Karnataka, India</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">call</span>
+<div>
+<p class="font-bold text-lg mb-1 text-white">Phone Number</p>
+<p class="text-on-surface-variant">+91 98809 89759</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+<div>
+<p class="font-bold text-lg mb-1 text-white">Working Hours</p>
+<p class="text-on-surface-variant">Mon - Sun: 09:00 AM - 09:00 PM</p>
+</div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden h-64 border border-outline-variant/30 relative group">
+    <iframe class="w-full h-full grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" src="https://maps.google.com/maps?q=Jigani%20-%20Anekal%20Rd,%20opp.%20Police%20Station,%20Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+    <a href="https://maps.google.com/?q=Jigani+-+Anekal+Rd,+opp.+Police+Station,+Bengaluru,+Karnataka+560105" target="_blank" class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-surface-container-highest/90 backdrop-blur-sm border border-primary/30 text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2">
+        <span class="material-symbols-outlined text-sm">directions</span> Get Directions
+    </a>
+</div>
+</div>
+<div class="bg-surface-container-high p-10 rounded-2xl shadow-xl border border-outline-variant/10">
+<h3 class="text-3xl font-serif mb-8 text-white">Quick Booking</h3>
+<form id="quick-booking-form" class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs uppercase tracking-widest text-on-surface-variant mb-2">Full Name</label>
+<input id="form-name" required class="w-full bg-transparent border-b border-outline-variant/50 focus:border-primary focus:ring-0 transition-all text-on-surface px-0 py-2" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-xs uppercase tracking-widest text-on-surface-variant mb-2">Phone Number</label>
+<input id="form-phone" required class="w-full bg-transparent border-b border-outline-variant/50 focus:border-primary focus:ring-0 transition-all text-on-surface px-0 py-2" placeholder="+91 00000 00000" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-xs uppercase tracking-widest text-on-surface-variant mb-2">Event Type</label>
+<select id="form-service" class="w-full bg-transparent border-b border-outline-variant/50 focus:border-primary focus:ring-0 transition-all text-on-surface px-0 py-2 appearance-none">
+<option class="bg-surface-container-high">Wedding Photography</option>
+<option class="bg-surface-container-high">Cinematic Film</option>
+<option class="bg-surface-container-high">Pre-Wedding Shoot</option>
+<option class="bg-surface-container-high">Corporate Event</option>
+<option class="bg-surface-container-high">E-commerce Shoot</option>
+<option class="bg-surface-container-high">Drone Coverage</option>
+</select>
+</div>
+<div>
+<label class="block text-xs uppercase tracking-widest text-on-surface-variant mb-2">Event Date</label>
+<input id="form-date" required class="w-full bg-transparent border-b border-outline-variant/50 focus:border-primary focus:ring-0 transition-all text-on-surface px-0 py-2 invert dark:invert-0" type="date"/>
+</div>
+<div>
+<label class="block text-xs uppercase tracking-widest text-on-surface-variant mb-2">Message</label>
+<textarea id="form-message" required class="w-full bg-transparent border-b border-outline-variant/50 focus:border-primary focus:ring-0 transition-all text-on-surface px-0 py-2" placeholder="Tell us about your event..." rows="3"></textarea>
+</div>
+<button class="w-full gold-gradient text-on-primary py-4 rounded-md font-bold uppercase tracking-widest hover:shadow-lg hover:shadow-primary/20 transition-all cursor-pointer" type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-12 bg-[#0e0e0e] border-t border-white/5 flex flex-col items-center">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full max-w-7xl mx-auto mb-12">
+<div class="md:col-span-2">
+<span class="text-lg font-serif text-[#f2ca50] mb-4 block">Devi Digital Studio</span>
+<p class="text-neutral-500 text-xs font-light tracking-widest uppercase leading-relaxed mb-6">We are professional storytellers based in Bengaluru, dedicated to capturing the magic of your most precious moments through cinema and stills.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:text-white hover:border-white transition-opacity" href="https://www.facebook.com/people/sathish_devistudio/100067106596400/" target="_blank" title="Facebook">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:text-white hover:border-white transition-opacity" href="https://www.instagram.com/deviphotography_2008" target="_blank" title="Instagram">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-[#f2ca50] font-bold uppercase tracking-widest text-xs mb-2">Explore</h5>
+</div></div></footer>
+<!-- Floating Action Buttons -->
+<div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+    <a href="tel:+919880989759" class="w-14 h-14 bg-surface-container-high border border-outline-variant/30 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-surface-bright transition-transform hover:scale-110 active:scale-95" title="Call Us">
+        <span class="material-symbols-outlined text-2xl">call</span>
+    </a>
+    <a href="https://wa.me/919880989759?text=Hi%20Devi%20Digital%20Studio" target="_blank" class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#25D366]/30 hover:bg-[#20bd5a] transition-transform hover:scale-110 active:scale-95" title="WhatsApp Us">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.015-1.04 2.476c0 1.46 1.065 2.872 1.213 3.07.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const heroImg = document.getElementById('hero-img');
+        const heroContent = document.getElementById('hero-content');
+        
+        // Initial entrance animation
+        if (heroContent) {
+            heroContent.style.opacity = '0';
+            heroContent.style.transform = 'translateY(30px)';
+            heroContent.style.transition = 'opacity 1.5s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.5s cubic-bezier(0.2, 0.8, 0.2, 1)';
+            
+            setTimeout(() => {
+                heroContent.style.opacity = '1';
+                heroContent.style.transform = 'translateY(0)';
+            }, 100);
+        }
+
+        if (heroImg) {
+            heroImg.style.transform = 'scale(1.1)';
+            heroImg.style.transition = 'transform 2.5s cubic-bezier(0.2, 0.8, 0.2, 1)';
+            setTimeout(() => {
+                heroImg.style.transform = 'scale(1.05)';
+            }, 100);
+        }
+
+        // Scroll parallax animation
+        let scrollTicked = false;
+        window.addEventListener('scroll', () => {
+            if (!scrollTicked) {
+                window.requestAnimationFrame(() => {
+                    const scrollY = window.scrollY;
+                    if (heroImg) {
+                        heroImg.style.transition = 'none';
+                        heroImg.style.transform = `translateY(${scrollY * 0.3}px) scale(1.05)`;
+                    }
+                    if (heroContent) {
+                        heroContent.style.transition = 'none';
+                        heroContent.style.opacity = Math.max(1 - scrollY / 400, 0);
+                        heroContent.style.transform = `translateY(${scrollY * 0.15}px)`;
+                    }
+                    scrollTicked = false;
+                });
+                scrollTicked = true;
+            }
+        });
+        
+        // Quick Booking Form Submission Logic (Redirect to WhatsApp)
+        const form = document.getElementById('quick-booking-form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Collect data
+                const name = document.getElementById('form-name').value;
+                const phone = document.getElementById('form-phone').value;
+                const service = document.getElementById('form-service').value;
+                const date = document.getElementById('form-date').value;
+                const message = document.getElementById('form-message').value;
+
+                // Format the message nicely for WhatsApp using Markdown bold syntax
+                let textMessage = `Hi *Devi Digital Studio*, I have a new booking inquiry!\n\n`;
+                textMessage += `*Name:* ${name}\n`;
+                textMessage += `*Phone:* ${phone}\n`;
+                textMessage += `*Service:* ${service}\n`;
+                
+                if (date) {
+                    textMessage += `*Date:* ${date}\n`;
+                }
+                if (message) {
+                    textMessage += `*Message:* ${message}`;
+                }
+
+                // Encode and open the WhatsApp link
+                const encodedMessage = encodeURIComponent(textMessage);
+                window.open(`https://wa.me/919880989759?text=${encodedMessage}`, '_blank');
+            });
+        }
+    });
+</script>
+</body></html>
